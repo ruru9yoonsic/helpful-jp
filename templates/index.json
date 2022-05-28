@@ -77,6 +77,7 @@
         "slide": {
           "type": "slide",
           "settings": {
+            "image": "shopify:\/\/shop_images\/linus-nylund-Q5QspluNZmM-unsplash.jpg",
             "heading": "Highlight a bold statement about your brand",
             "heading_size": "h1",
             "subheading": "",
