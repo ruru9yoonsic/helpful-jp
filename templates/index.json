@@ -31,6 +31,7 @@
         "button"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/linus-nylund-Q5QspluNZmM-unsplash.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
