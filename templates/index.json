@@ -46,10 +46,17 @@
         "padding_top": 40,
         "padding_bottom": 0
       }
+    },
+    "1663855175f8c76f9a": {
+      "type": "top--news",
+      "settings": {
+        "blog": "todays-good-and-new"
+      }
     }
   },
   "order": [
     "image_banner",
-    "rich_text"
+    "rich_text",
+    "1663855175f8c76f9a"
   ]
 }
