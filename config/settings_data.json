@@ -127,6 +127,7 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Welcome to our store",
               "text_alignment": "center",
@@ -145,8 +146,8 @@
         "type": "header",
         "settings": {
           "color_scheme": "background-1",
-          "logo": "{{ shop.brand.logo }}",
-          "logo_width": 90,
+          "logo": "shopify:\/\/shop_images\/Group_1.jpg",
+          "logo_width": 50,
           "logo_position": "middle-left",
           "menu": "main-menu",
           "menu_type_desktop": "dropdown",
@@ -163,6 +164,7 @@
         "blocks": {
           "footer-0": {
             "type": "link_list",
+            "disabled": true,
             "settings": {
               "heading": "Quick links",
               "menu": "footer"
@@ -170,6 +172,7 @@
           },
           "footer-1": {
             "type": "link_list",
+            "disabled": true,
             "settings": {
               "heading": "Info",
               "menu": "footer"
@@ -177,6 +180,7 @@
           },
           "footer-2": {
             "type": "text",
+            "disabled": true,
             "settings": {
               "heading": "Our mission",
               "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
