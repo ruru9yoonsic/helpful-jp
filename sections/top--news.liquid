@@ -1,47 +1,37 @@
-<section>
+<section class="outline--{{ section.id }}">
   <div class="inner-md">
-    <div class="">
-      <h2 class="head-title">News</h2>
+    <div>
+      <h2 class="head-title">{{ section.settings.title | newline_to_br }}</h2>
     </div>
     <ul class="news-item">
-      <li>
-        <a href="#">
-          <div class="news-img"><img src="https://cdn.shopify.com/s/files/1/0645/5151/8428/files/3519e689c9196135038db8dc0044ea92_487c894f-9fb7-422b-96eb-c06038d1d310.png?v=1663850600" alt="news-img"></div>
-          <div class="news-date">2022.9.22</div>
-          <h3 class="news-text">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h3>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <div><img src="https://cdn.shopify.com/s/files/1/0645/5151/8428/files/3519e689c9196135038db8dc0044ea92_487c894f-9fb7-422b-96eb-c06038d1d310.png?v=1663850600" alt="news-img"></div>
-          <div class="news-date">2022.9.22</div>
-          <h3 class="news-text">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h3>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <div><img src="https://cdn.shopify.com/s/files/1/0645/5151/8428/files/3519e689c9196135038db8dc0044ea92_487c894f-9fb7-422b-96eb-c06038d1d310.png?v=1663850600" alt="news-img"></div>
-          <div class="news-date">2022.9.22</div>
-          <h3 class="news-text">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h3>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <div><img src="https://cdn.shopify.com/s/files/1/0645/5151/8428/files/3519e689c9196135038db8dc0044ea92_487c894f-9fb7-422b-96eb-c06038d1d310.png?v=1663850600" alt="news-img"></div>
-          <div class="news-date">2022.9.22</div>
-          <h3 class="news-text">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h3>
-        </a>
-      </li>
+      {% for article in section.settings.blog.articles %}
+        <li>
+          <a href="#">
+            <div class="news-img">
+              <img src="{{ article.image | img_url: '300x300' }}" alt="{{ article.title }}">
+            </div>
+            <div class="news-date">
+              <p>{{ article.created_at | date: '%B %d, %Y' }}</p>
+            </div>
+            <h3 class="news-text">{{ article.title }}</h3>
+          </a>
+        </li>
+      {% endfor %}
     </ul>  
   </div>
 </section>
 
 <style>
-  img {
+.outline--{{ section.id }} {
+  background-color: {{ section.settings.bg_color }};
+  padding: {{ section.settings.padding }};
+  margin: {{ section.settings.margin }};
+}
+
+.news-item img {
   width: 100%;
   border-radius: 5px;
-
-  }
+}
 
 .inner-md{
   width: 90%;
@@ -50,20 +40,21 @@
 }
 .head-title {
   font-size: 3.4rem;
-  font-family: Montserrat, YuGothic, "Yu Gothic", メイリオ, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
 }
 .news-item {
   display: flex;
   list-style: none;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
 .news-item li {
-  width: 22.727272%;
+  width: 21%;
   margin-right: 3.0303%;
 }
 .news-item li a {
   text-decoration: none;
+  color: rgb(var(--color-foreground))
 }
 .news-date {
   font-size: 1.0rem;
@@ -76,7 +67,6 @@
 }
 @media(max-width:750px){
   .news-item{
-  flex-wrap: wrap;
   justify-content: space-between;
   }
   .news-item li {
@@ -93,9 +83,29 @@
   "class": "section",
   "settings": [
     {
+      "type": "textarea",
+      "id": "title",
+      "label": "title",
+      "default": "NEWS"
+    },{
       "type": "blog",
       "id": "blog",
       "label": "blog"
+    },{
+      "type": "header",
+      "content": "全体の設定"
+    },{
+      "type": "color",
+      "id": "bg_color",
+      "label": "背景色"
+    },{
+      "type": "text",
+      "id": "padding",
+      "label": "padding:"
+    },{
+      "type": "text",
+      "id": "margin",
+      "label": "margin:"
     }
   ],
   "presets": [
