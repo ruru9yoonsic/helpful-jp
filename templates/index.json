@@ -2,6 +2,7 @@
   "sections": {
     "image_banner": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "{{ shop.brand.cover_image }}",
         "image_2": "shopify:\/\/shop_images\/3519e689c9196135038db8dc0044ea92.png",
