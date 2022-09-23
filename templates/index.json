@@ -4,7 +4,7 @@
       "type": "image-banner",
       "settings": {
         "image": "{{ shop.brand.cover_image }}",
-        "image_2": "shopify:\/\/shop_images\/helpful-fv.png",
+        "image_2": "shopify:\/\/shop_images\/3519e689c9196135038db8dc0044ea92.png",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "adapt_height_first_image": false,
