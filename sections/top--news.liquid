@@ -6,7 +6,7 @@
     <ul class="news-item">
       {% for article in section.settings.blog.articles %}
         <li>
-          <a href="#">
+          <a href="{{ article.url }}">
             <div class="news-img">
               <img src="{{ article.image | img_url: '300x300' }}" alt="{{ article.title }}">
             </div>
