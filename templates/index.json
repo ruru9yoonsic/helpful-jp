@@ -50,7 +50,11 @@
     "1663855175f8c76f9a": {
       "type": "top--news",
       "settings": {
-        "blog": "todays-good-and-new"
+        "title": "NEWS",
+        "blog": "todays-good-and-new",
+        "bg_color": "",
+        "padding": "50px 0",
+        "margin": ""
       }
     }
   },
