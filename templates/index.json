@@ -39,10 +39,21 @@
         "padding": "30px 0",
         "margin": ""
       }
+    },
+    "1664109734d9354692": {
+      "type": "top--news",
+      "settings": {
+        "title": "Diary",
+        "blog": "harunas-new",
+        "bg_color": "",
+        "padding": "",
+        "margin": ""
+      }
     }
   },
   "order": [
     "rich_text",
-    "1663855175f8c76f9a"
+    "1663855175f8c76f9a",
+    "1664109734d9354692"
   ]
 }
