@@ -4,7 +4,7 @@
       <h2 class="head-title">{{ section.settings.title | newline_to_br }}</h2>
     </div>
     <ul class="news-item">
-      {% for article in section.settings.blog.articles %}
+      {% for article in section.settings.blog.articles limit: 8%}
         <li>
           <a href="{{ article.url }}">
             <div class="news-img">
@@ -17,6 +17,9 @@
           </a>
         </li>
       {% endfor %}
+        <li>
+          <a href="{{ section.settings.blog.url }}">more...</a>
+        </li>
     </ul>  
   </div>
 </section>
