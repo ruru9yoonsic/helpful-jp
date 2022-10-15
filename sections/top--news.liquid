@@ -8,7 +8,11 @@
         <li>
           <a href="{{ article.url }}">
             <div class="news-img">
+            {% if article.image != blank %}
+              <img src="https://cdn.shopify.com/s/files/1/0645/5151/8428/files/helpful-fv_483a9ed1-2dd0-4ff6-ba56-604f1c48366d.png?v=1664078794" alt="{{ article.title }}" loading="lazy" width="100%" height="100%">
+            {% else %}
               <img src="{{ article.image | img_url: '300x300' }}" alt="{{ article.title }}" loading="lazy" width="100%" height="100%">
+            {% endif %}
             </div>
             <div class="news-date">
               <p>{{ article.created_at | date: '%B %d, %Y' }}</p>
