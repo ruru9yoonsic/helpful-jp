@@ -49,11 +49,19 @@
         "padding": "",
         "margin": ""
       }
+    },
+    "7753cdaf-f23d-4417-912a-593d586825c9": {
+      "type": "top--profile",
+      "settings": {
+        "title": "Profile",
+        "text": ""
+      }
     }
   },
   "order": [
     "rich_text",
     "1663855175f8c76f9a",
-    "1664109734d9354692"
+    "1664109734d9354692",
+    "7753cdaf-f23d-4417-912a-593d586825c9"
   ]
 }
