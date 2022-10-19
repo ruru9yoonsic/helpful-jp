@@ -54,7 +54,9 @@
       "type": "top--profile",
       "settings": {
         "title": "Profile",
-        "text": ""
+        "text": "",
+        "padding": "",
+        "margin": "0 auto"
       }
     }
   },
