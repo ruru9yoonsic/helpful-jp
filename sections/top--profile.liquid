@@ -1,0 +1,58 @@
+<section class="outline--{{ section.id }}">
+  <h2>{{ section.settings.title | newline_to_br }}</h2>
+  <div class="card--{{ section.id }}">
+    <div class="image--{{ section.id }}">
+      <img src="{{ section.settings.image | img_url: "original" }}" width="100%" height="100%" loading="lazy">
+    </div>
+    <div>
+      <p>{{ section.settings.text | newline_to_br }}</p>
+    </div>
+  </div>
+</section>
+
+<style>
+.outline--{{ section.id }} {
+  background-color: {{ section.settings.bg_color }};
+  padding: {{ section.settings.padding }};
+  margin: {{ section.settings.margin }};
+}
+.outline--{{ section.id }} h2 {
+  {% comment %} font-size: 3.4rem; {% endcomment %}
+}
+.card--{{ section.id }} {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2%;
+}
+.card--{{ section.id }} .image--{{ section.id }} {
+  border-radius: 4px;
+}
+</style>
+{% schema %}
+{
+  "name": "TOP Profile",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "タイトル",
+      "default": "Profile"
+    },{
+      "type": "image_picker",
+      "id": "image",
+      "label": "画像"
+    },{
+      "type": "textarea",
+      "id": "text",
+      "label": "テキスト"
+    }
+  ],
+  "presets": [
+    {
+      "name": "TOP Profile"
+    }
+  ]
+}
+{% endschema %}
