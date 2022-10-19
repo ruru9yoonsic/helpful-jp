@@ -25,13 +25,15 @@
   max-width: 1100px;
   margin: 0 auto;
 }
-.card--{{ section.id }} {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2%;
-}
 .card--{{ section.id }} .image--{{ section.id }} {
   border-radius: 4px;
+}
+@media(max-width:750px){
+  .card--{{ section.id }} {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
+  }
 }
 </style>
 {% schema %}
