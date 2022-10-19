@@ -54,7 +54,8 @@
       "type": "top--profile",
       "settings": {
         "title": "Profile",
-        "text": "",
+        "image": "shopify:\/\/shop_images\/sHiffUpC1Uo3rtU1666179238_1666179343.jpg",
+        "text": "Yuya Wada\nShopify Front Engineer\nAuthor \"Today's Good and New\"",
         "padding": "",
         "margin": "0 auto"
       }
