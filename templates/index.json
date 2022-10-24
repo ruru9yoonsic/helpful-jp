@@ -59,7 +59,7 @@
         "image2": "shopify:\/\/shop_images\/image_6.png",
         "text2": "H.F\nShopify Designer\nAuthor \"Today's Diary\"",
         "padding": "20px",
-        "margin": "0 auto"
+        "margin": "20px auto"
       }
     }
   },
