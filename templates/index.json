@@ -30,6 +30,16 @@
         "padding_bottom": 0
       }
     },
+    "6ae5cb1b-8488-45ab-b7fc-dcf86b73b3f2": {
+      "type": "top--news",
+      "settings": {
+        "title": "Works",
+        "blog": "works",
+        "bg_color": "",
+        "padding": "",
+        "margin": ""
+      }
+    },
     "1663855175f8c76f9a": {
       "type": "top--news",
       "settings": {
@@ -65,6 +75,7 @@
   },
   "order": [
     "rich_text",
+    "6ae5cb1b-8488-45ab-b7fc-dcf86b73b3f2",
     "1663855175f8c76f9a",
     "1664109734d9354692",
     "7753cdaf-f23d-4417-912a-593d586825c9"
