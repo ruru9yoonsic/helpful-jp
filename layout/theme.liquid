@@ -235,7 +235,10 @@
     }
     </script>
 
+  {% comment %}
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    {% endcomment %}
+    {{ 'jquery-3.6.1.min.js' | asset_url | script_tag }}
   </head>
 
   <body class="gradient">
