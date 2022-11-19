@@ -235,7 +235,8 @@
     }
     </script>
 
-  {{ 'jquery-3.6.1.min.js' | asset_url | script_tag }}
+  {{ 'jquery-3.6.1.min.js' | asset_url | script_tag }}  
+    <script src="{{ 'jquery-3.6.1.min.js' | asset_url }}" defer="defer"></script>
   </head>
 
   <body class="gradient">
