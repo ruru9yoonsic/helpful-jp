@@ -72,8 +72,8 @@
         "text": "Yuya Wada\nShopify Front-End Engineer",
         "image2": "shopify:\/\/shop_images\/image_6.png",
         "text2": "Haru\nShopify Designer",
-        "padding": "20px 20px 0 20px",
-        "margin": "20px auto"
+        "padding": "0 20px",
+        "margin": "0 auto"
       }
     }
   },
