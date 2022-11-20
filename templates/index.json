@@ -54,6 +54,7 @@
     },
     "1664109734d9354692": {
       "type": "top--news",
+      "disabled": true,
       "settings": {
         "title": "Today's Diary",
         "isDate": true,
