@@ -92,6 +92,50 @@
         "color_scheme": "background-1",
         "mobile_content_alignment": "left",
         "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "e9b8dfea-e400-4502-ac7e-5c2308afb332": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16721913479388__e9b8dfea-e400-4502-ac7e-5c2308afb332-167024659314a585e6-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "template--16721913479388__e9b8dfea-e400-4502-ac7e-5c2308afb332-167024659314a585e6-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--16721913479388__e9b8dfea-e400-4502-ac7e-5c2308afb332-167024659314a585e6-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16721913479388__e9b8dfea-e400-4502-ac7e-5c2308afb332-167024659314a585e6-0",
+        "template--16721913479388__e9b8dfea-e400-4502-ac7e-5c2308afb332-167024659314a585e6-1",
+        "template--16721913479388__e9b8dfea-e400-4502-ac7e-5c2308afb332-167024659314a585e6-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/kelly-sikkema-HymOWIY2o3s-unsplash.jpg",
+        "height": "large",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
         "padding_bottom": 36
       }
     }
@@ -99,6 +143,7 @@
   "order": [
     "main",
     "f4cf8eec-f990-4f5e-b103-1163998654df",
-    "4652aa4c-3228-4d38-8fcb-5829d15a76a6"
+    "4652aa4c-3228-4d38-8fcb-5829d15a76a6",
+    "e9b8dfea-e400-4502-ac7e-5c2308afb332"
   ]
 }
