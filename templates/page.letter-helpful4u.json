@@ -50,10 +50,47 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "d88e480b-fc04-4dbe-9732-508185c05591": {
+      "type": "image-banner",
+      "blocks": {
+        "template--16721913479388__d88e480b-fc04-4dbe-9732-508185c05591-16702465297613eb50-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "最近いつお手紙もらいましたか？",
+            "heading_size": "h1"
+          }
+        },
+        "template--16721913479388__d88e480b-fc04-4dbe-9732-508185c05591-16702465297613eb50-1": {
+          "type": "text",
+          "settings": {
+            "text": "ポストをぐっと開けた時に、いつもあるはずのチラシに紛れて１通の便箋を見つけました。裏返して宛名を見ると、あなたの大切なあの人からでした。",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16721913479388__d88e480b-fc04-4dbe-9732-508185c05591-16702465297613eb50-0",
+        "template--16721913479388__d88e480b-fc04-4dbe-9732-508185c05591-16702465297613eb50-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/omar-lopez-DVvY7-TSzTo-unsplash.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
     "main",
-    "f4cf8eec-f990-4f5e-b103-1163998654df"
+    "f4cf8eec-f990-4f5e-b103-1163998654df",
+    "d88e480b-fc04-4dbe-9732-508185c05591"
   ]
 }
