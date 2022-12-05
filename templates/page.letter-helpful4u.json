@@ -51,46 +51,54 @@
         "padding_bottom": 52
       }
     },
-    "d88e480b-fc04-4dbe-9732-508185c05591": {
-      "type": "image-banner",
+    "4652aa4c-3228-4d38-8fcb-5829d15a76a6": {
+      "type": "image-with-text",
       "blocks": {
-        "template--16721913479388__d88e480b-fc04-4dbe-9732-508185c05591-16702465297613eb50-0": {
+        "template--16721913479388__4652aa4c-3228-4d38-8fcb-5829d15a76a6-167024659314a585e6-0": {
           "type": "heading",
           "settings": {
-            "heading": "最近いつお手紙もらいましたか？",
+            "heading": "最近いつお手紙をもらいましたか？",
             "heading_size": "h1"
           }
         },
-        "template--16721913479388__d88e480b-fc04-4dbe-9732-508185c05591-16702465297613eb50-1": {
+        "template--16721913479388__4652aa4c-3228-4d38-8fcb-5829d15a76a6-167024659314a585e6-1": {
           "type": "text",
           "settings": {
-            "text": "ポストをぐっと開けた時に、いつもあるはずのチラシに紛れて１通の便箋を見つけました。裏返して宛名を見ると、あなたの大切なあの人からでした。",
+            "text": "<p>ポストをぐっと開けた時に、<\/p><p>いつもあるはずのチラシに紛れて１通の便箋を見つけました。<\/p><p>裏返して宛名を見ると、<\/p><p>あなたの大切なあの人からでした。<\/p>",
             "text_style": "body"
+          }
+        },
+        "template--16721913479388__4652aa4c-3228-4d38-8fcb-5829d15a76a6-167024659314a585e6-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "お手紙を依頼する",
+            "button_link": ""
           }
         }
       },
       "block_order": [
-        "template--16721913479388__d88e480b-fc04-4dbe-9732-508185c05591-16702465297613eb50-0",
-        "template--16721913479388__d88e480b-fc04-4dbe-9732-508185c05591-16702465297613eb50-1"
+        "template--16721913479388__4652aa4c-3228-4d38-8fcb-5829d15a76a6-167024659314a585e6-0",
+        "template--16721913479388__4652aa4c-3228-4d38-8fcb-5829d15a76a6-167024659314a585e6-1",
+        "template--16721913479388__4652aa4c-3228-4d38-8fcb-5829d15a76a6-167024659314a585e6-2"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/omar-lopez-DVvY7-TSzTo-unsplash.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
         "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
     "main",
     "f4cf8eec-f990-4f5e-b103-1163998654df",
-    "d88e480b-fc04-4dbe-9732-508185c05591"
+    "4652aa4c-3228-4d38-8fcb-5829d15a76a6"
   ]
 }
