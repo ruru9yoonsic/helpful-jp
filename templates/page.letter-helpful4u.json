@@ -101,21 +101,21 @@
         "template--16721913479388__e9b8dfea-e400-4502-ac7e-5c2308afb332-167024659314a585e6-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "誰に手紙を届けたいですか？",
             "heading_size": "h1"
           }
         },
         "template--16721913479388__e9b8dfea-e400-4502-ac7e-5c2308afb332-167024659314a585e6-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>照れくさいけどお母さんへ<\/p><p>上手く話せなかったお父さんに<\/p><p>可愛がってくれたおじいちゃんおばあちゃん<\/p><p>お世話になった先輩たち<\/p><p>離れ離れになったお友達<\/p><p>誰が最初思い浮かびましたか？<\/p>",
             "text_style": "body"
           }
         },
         "template--16721913479388__e9b8dfea-e400-4502-ac7e-5c2308afb332-167024659314a585e6-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "お手紙を依頼する",
             "button_link": ""
           }
         }
@@ -132,7 +132,7 @@
         "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
+        "content_layout": "overlap",
         "color_scheme": "background-1",
         "mobile_content_alignment": "left",
         "padding_top": 0,
