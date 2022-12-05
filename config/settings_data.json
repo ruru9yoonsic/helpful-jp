@@ -119,7 +119,7 @@
     "predictive_search_show_price": false,
     "favicon": "shopify:\/\/shop_images\/Group_1.png",
     "currency_code_enabled": true,
-    "cart_type": "notification",
+    "cart_type": "page",
     "show_vendor": false,
     "show_cart_note": false,
     "sections": {
@@ -152,7 +152,7 @@
           "logo_position": "middle-center",
           "menu": "",
           "menu_type_desktop": "dropdown",
-          "show_line_separator": true,
+          "show_line_separator": false,
           "enable_sticky_header": true,
           "mobile_logo_position": "center",
           "margin_bottom": 0,
