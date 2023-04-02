@@ -32,6 +32,7 @@
     },
     "6ae5cb1b-8488-45ab-b7fc-dcf86b73b3f2": {
       "type": "top--news",
+      "disabled": true,
       "settings": {
         "title": "Works",
         "isDate": false,
@@ -43,6 +44,7 @@
     },
     "1663855175f8c76f9a": {
       "type": "top--news",
+      "disabled": true,
       "settings": {
         "title": "Today's Good & New",
         "isDate": true,
