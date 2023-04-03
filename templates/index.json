@@ -1,7 +1,16 @@
 {
   "sections": {
+    "ff369500-b8fd-4c6f-bc5d-771fc123dafd": {
+      "type": "top--accordion",
+      "settings": {
+        "bgColor": "",
+        "margin": "",
+        "padding": ""
+      }
+    },
     "rich_text": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
@@ -68,6 +77,7 @@
     },
     "7753cdaf-f23d-4417-912a-593d586825c9": {
       "type": "top--profile",
+      "disabled": true,
       "settings": {
         "title": "Profile",
         "image": "shopify:\/\/shop_images\/sHiffUpC1Uo3rtU1666179238_1666179343.jpg",
@@ -80,6 +90,7 @@
     }
   },
   "order": [
+    "ff369500-b8fd-4c6f-bc5d-771fc123dafd",
     "rich_text",
     "6ae5cb1b-8488-45ab-b7fc-dcf86b73b3f2",
     "1663855175f8c76f9a",
