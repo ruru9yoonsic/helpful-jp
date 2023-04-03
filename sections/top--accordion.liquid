@@ -1,0 +1,146 @@
+<section class="outline--{{ section.id }}">
+  <div class="inner--{{ section.id }}">
+    <h2>Thank you for coming</h2>
+    <ul class="top--accordion">
+      <li class="top--accordion-item">
+        <h3 class="top--accordion-header">Profile</h3>
+        <div class="top--accordion-content">
+          <img class="top--accordion-content-img" src="https://cdn.shopify.com/s/files/1/0645/5151/8428/files/IMG_0786_square.jpg?v=1680492190" alt="myProfile" width="100%" height="100%">
+          <div class="top--accordion-content-grid">
+            <dt>Name</dt>
+            <dd>Yuya Wada</dd>
+            <dt>Birthday</dt>
+            <dd>April,1997</dd>
+          </div>
+        </div>
+      </li>
+      <li class="top--accordion-item">
+        <h3 class="top--accordion-header">Clients</h3>
+        <div class="top--accordion-content">
+          <p>回答2</p>
+        </div>
+      </li>
+      <li class="top--accordion-item">
+        <h3 class="top--accordion-header">Resume</h3>
+        <div class="top--accordion-content">
+          <p>回答3</p>
+        </div>
+      </li>
+      <li class="top--accordion-item">
+        <h3 class="top--accordion-header">Contact</h3>
+        <div class="top--accordion-content">
+          <div class="top--accordion-content-grid">
+            <dt>email</dt>
+            <dd>yuya.wada.san@gmail.com</dd>
+          </div>
+        </div>
+      </li>
+    </ul>    
+  </div>
+</section>
+
+<style>
+.outline--{{ section.id }} {
+  background-color: {{ section.settings.bgColor }};
+  padding: {{ section.settings.padding }};
+  margin: {{ section.settings.margin }};
+}
+.inner--{{ section.id }} {
+  max-width: 750px;
+  margin: 0 auto;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+.inner--{{ section.id }} h2 {
+  text-align: center;
+}
+.inner--{{ section.id }} ul {
+  list-style: none;
+  padding: 0;
+}
+.top--accordion {
+  background-color: {{ settings.colors_accent_2 }};
+  color: #FFF;
+  width: 100vw;
+  max-width: 750px;
+}
+.top--accordion .top--accordion-item {
+  padding: 20px 10px;
+  border-bottom: solid 1px {{ settings.colors_background_1 }};
+}
+.top--accordion .top--accordion-item h3 {
+  padding: 0;
+  margin: 0;
+  color: {{ settings.colors_background_1 }};
+  font-family: {{ settings.type_body_font.family }};
+  font-weight: bold;
+}
+.top--accordion .top--accordion-item .top--accordion-content {
+  padding: 10px;
+}
+.top--accordion .top--accordion-item .top--accordion-content img {    
+  width: 50%;
+  border-radius: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.top--accordion .top--accordion-item .top--accordion-content p {
+  padding: 0;
+  margin: 0;
+  color: var(--color-base-text);
+}
+.top--accordion .top--accordion-item .top--accordion-content .top--accordion-content-grid  {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  margin-top: 10px;
+  row-gap: 10px;
+}
+.top--accordion .top--accordion-item .top--accordion-content .top--accordion-content-grid td, 
+.top--accordion .top--accordion-item .top--accordion-content .top--accordion-content-grid dd {
+  margin: 0;
+}
+@media(width > 750px){
+  .top--accordion .top--accordion-item .top--accordion-content .top--accordion-content-grid  {
+    grid-template-columns: 150px auto;
+  }
+}
+</style>
+{% schema %}
+{
+  "name": "TOP top--accordion",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bgColor",
+      "label": "全体の背景色"
+    },{
+      "type": "text",
+      "id": "margin",
+      "label": "margin:"
+    },{
+      "type": "text",
+      "id": "padding",
+      "label": "padding:"
+    }
+  ],
+  "presets": [
+    {
+      "name": "TOP top--accordion"
+    }
+  ]
+}
+{% endschema %}
+
+<script>
+$(document).ready(function() {
+  // 初期状態で全ての回答を非表示にする
+  $('.top--accordion-content').hide();
+  
+  $('.top--accordion-header').click(function() {
+    $(this).toggleClass('active');
+    $(this).next('.top--accordion-content').slideToggle();
+  });
+});  
+</script>
