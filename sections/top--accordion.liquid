@@ -28,13 +28,19 @@
       <li class="top--accordion-item">
         <h3 class="top--accordion-header">Clients {{ accordionButton}}</h3>
         <div class="top--accordion-content">
-          <p>回答2</p>
+          {% for article in blogs['works'].articles reversed %}
+            <a href="{{ article.url }}">
+              <img src="{{ article.image | img_url: 'medium' }}">
+              <p>{{ article.title }}</p>
+            </a>
+          {% endfor %}
+          <span>scroll →</span>
         </div>
       </li>
       <li class="top--accordion-item">
         <h3 class="top--accordion-header">Resume {{ accordionButton}}</h3>
         <div class="top--accordion-content">
-          <p>回答3</p>
+          <p>Getting ready</p>
         </div>
       </li>
       <li class="top--accordion-item">
@@ -103,6 +109,26 @@
 .top--accordion .top--accordion-item .top--accordion-content {
   padding: 10px;
 }
+.top--accordion .top--accordion-item:has(a) {
+  position: relative;
+}
+.top--accordion .top--accordion-item .top--accordion-content:has(a) {
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;  
+  gap: 10px;
+  padding: 10px;
+}
+.top--accordion .top--accordion-item .top--accordion-content a {  
+  color: var(--color-base-text);
+  text-decoration: none;
+}
+.top--accordion .top--accordion-item .top--accordion-content span {  
+  color: var(--color-base-text);
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
 .top--accordion .top--accordion-item .top--accordion-content p {
   padding: 0;
   margin: 0;
@@ -122,6 +148,9 @@
 @media(width > 750px){
   .top--accordion .top--accordion-item .top--accordion-content .top--accordion-content-grid  {
     grid-template-columns: 150px auto;
+  }
+  .top--accordion .top--accordion-item .top--accordion-content:has(a) {
+    overflow-x: auto;
   }
 }
 </style>
