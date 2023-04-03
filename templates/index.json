@@ -7,94 +7,9 @@
         "margin": "",
         "padding": ""
       }
-    },
-    "rich_text": {
-      "type": "rich-text",
-      "disabled": true,
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Helpful for you<\/p>",
-            "heading_size": "h0"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>あなたの役に立ちたい<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 100,
-        "padding_bottom": 0
-      }
-    },
-    "6ae5cb1b-8488-45ab-b7fc-dcf86b73b3f2": {
-      "type": "top--news",
-      "disabled": true,
-      "settings": {
-        "title": "Works",
-        "isDate": false,
-        "blog": "works",
-        "bg_color": "",
-        "padding": "",
-        "margin": ""
-      }
-    },
-    "1663855175f8c76f9a": {
-      "type": "top--news",
-      "disabled": true,
-      "settings": {
-        "title": "Today's Good & New",
-        "isDate": true,
-        "blog": "todays-good-and-new",
-        "bg_color": "",
-        "padding": "30px 0",
-        "margin": ""
-      }
-    },
-    "1664109734d9354692": {
-      "type": "top--news",
-      "disabled": true,
-      "settings": {
-        "title": "Today's Diary",
-        "isDate": true,
-        "blog": "harunas-new",
-        "bg_color": "",
-        "padding": "",
-        "margin": ""
-      }
-    },
-    "7753cdaf-f23d-4417-912a-593d586825c9": {
-      "type": "top--profile",
-      "disabled": true,
-      "settings": {
-        "title": "Profile",
-        "image": "shopify:\/\/shop_images\/sHiffUpC1Uo3rtU1666179238_1666179343.jpg",
-        "text": "Yuya Wada\nShopify Front-End Engineer",
-        "image2": "shopify:\/\/shop_images\/image_6.png",
-        "text2": "Haru\nShopify Designer",
-        "padding": "0 20px",
-        "margin": "0 auto"
-      }
     }
   },
   "order": [
-    "ff369500-b8fd-4c6f-bc5d-771fc123dafd",
-    "rich_text",
-    "6ae5cb1b-8488-45ab-b7fc-dcf86b73b3f2",
-    "1663855175f8c76f9a",
-    "1664109734d9354692",
-    "7753cdaf-f23d-4417-912a-593d586825c9"
+    "ff369500-b8fd-4c6f-bc5d-771fc123dafd"
   ]
 }
