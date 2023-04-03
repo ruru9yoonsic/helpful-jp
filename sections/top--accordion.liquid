@@ -54,8 +54,10 @@
         <h3 class="top--accordion-header">Contact {{ accordionButton}}</h3>
         <div class="top--accordion-content">
           <div class="top--accordion-content-grid">
-            <dt>email</dt>
+            <dt>Email</dt>
             <dd>yuya.wada.san@gmail.com</dd>
+            <dt>Facebook</dt>
+            <dd>Coming soon</dd>
           </div>
         </div>
       </li>
@@ -72,9 +74,6 @@
 .inner--{{ section.id }} {
   max-width: 750px;
   margin: 0 auto;
-  {% comment %} display: grid;
-  place-content: center;
-  height: 100vh; {% endcomment %}
 }
 .inner--{{ section.id }} .top--accordion-content-img {    
   max-width: 200px;
@@ -164,7 +163,7 @@
 </style>
 {% schema %}
 {
-  "name": "TOP top--accordion",
+  "name": "TOP accordion",
   "settings": [
     {
       "type": "color",
@@ -182,7 +181,7 @@
   ],
   "presets": [
     {
-      "name": "TOP top--accordion"
+      "name": "TOP accordion"
     }
   ]
 }
@@ -190,9 +189,11 @@
 
 <script>
 $(document).ready(function() {
-  // 初期状態で全ての回答を非表示にする
+
+  {% comment %} default {% endcomment %}
   $('.top--accordion-content').hide();
   
+  {% comment %} click : header {% endcomment %}
   $('.top--accordion-header').click(function() {
     var $accordionButton = $(this).find('svg');
     var rotation = $accordionButton.data('rotation') || 0;
