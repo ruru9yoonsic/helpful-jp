@@ -27,7 +27,7 @@
             <dt>Hobby</dt>
             <dd>Tennis / Surfing / Bouldering / Poker / NFL / Cooking / Coffee</dd>
             <dt>Job</dt>
-            <dd>Shopify front-end engineer</dd>
+            <dd>Shopify front-end developer</dd>
             <dt>Skill</dt>
             <dd>HTML / CSS / Liquid / JavaScript (jQuery) / React (Next.js) / TypeScript / Python</dd>
           </div>
@@ -102,6 +102,11 @@
   max-width: 750px;
   margin: 0 auto;
 }
+.inner--{{ section.id }} > img {
+  display: block;
+  margin: 10px;
+  border-radius: 10px;
+}
 .inner--{{ section.id }} .top--accordion-content-img {    
   max-width: 200px;
   max-height: 200px;
@@ -117,7 +122,6 @@
   list-style: none;
   padding: 0;
   margin: 0 auto;
-  transform: translateY(-7px);
 }
 .top--accordion {
   background-color: {{ settings.colors_accent_2 }};
