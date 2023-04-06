@@ -133,7 +133,11 @@
 .top--accordion {
   background-color: {{ settings.colors_accent_2 }};
   width: 100vw;
-  max-width: 730px;
+}
+@media(width > 750px){
+  .top--accordion {    
+    max-width: 730px;
+  }
 }
 .top--accordion .top--accordion-item {
   border-bottom: solid 1px {{ settings.colors_background_1 }};
