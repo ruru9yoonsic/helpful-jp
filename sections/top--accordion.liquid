@@ -136,6 +136,8 @@
   margin: 10px;
   width: calc(100% - 20px);
   border-radius: 10px;
+  max-height: 400px;
+  object-fit: cover;
 }
 .inner--{{ section.id }} .top--accordion-content-img {    
   max-width: 200px;
@@ -290,15 +292,18 @@
 <script>
 $(document).ready(function() {
 
-  {% comment %} default {% endcomment %}
+  {% comment %} Initialized {% endcomment %}
   $('.top--accordion-content').hide();
   $('[data-name="haruna"]').hide();
 
+  {% comment %} declaration switch btn image src {% endcomment %}
   const imgSrcToYuya = "{{ btnSwitchToYuya }}";
   const imgSrcToHaruna = "{{ btnSwitchToHaruna }}";
-  {% comment %} Switch Btn {% endcomment %}
+
+  {% comment %} Switch Profile {% endcomment %}
   $('.top--btn-switch').on('click', function() {
     var currentImgSrc = $(this).children('img').attr('src');
+
     {% comment %} haruna to yuya {% endcomment %}
     if(currentImgSrc == imgSrcToYuya) {
       $(this).children('img').attr('src', imgSrcToHaruna);
@@ -313,7 +318,7 @@ $(document).ready(function() {
     }
   });
   
-  {% comment %} click : header {% endcomment %}
+  {% comment %} Accordion {% endcomment %}
   $('.top--accordion-header').click(function() {
     var $accordionButton = $(this).find('svg');
     var rotation = $accordionButton.data('rotation') || 0;
