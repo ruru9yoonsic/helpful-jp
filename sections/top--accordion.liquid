@@ -126,12 +126,9 @@
       <li class="top--accordion-item">
         <h3 class="top--accordion-header">Site {{ accordionButton}}</h3>
         <div class="top--accordion-content">
-          <div class="top--accordion-content-grid">
-            <dt>Portfolio site</dt>
-            <dd>
-              <a href="https://haruportfolio.studio.site" target="_blank">https://haruportfolio.studio.site</a>
-            </dd>
-          </div>
+          <p>
+            <a href="https://haruportfolio.studio.site" target="_blank">https://haruportfolio.studio.site</a>
+          </p>
         </div>
       </li>
       <li class="top--accordion-item">
@@ -173,6 +170,7 @@
 .inner--{{ section.id }} {
   max-width: 750px;
   margin: 0 auto;
+  display: none;
 }
 .inner--{{ section.id }} > img {
   display: block;
@@ -310,6 +308,11 @@
 [data-name="haruna"] .top--accordion {
   background-color: #E88E8E;
 }
+[data-name="haruna"] .top--accordion p:has(a) {
+  display: block;
+  width: 100%;
+  border-bottom: 0.5px solid rgb(5, 0, 78, 0.5);
+}
 </style>
 {% schema %}
 {
@@ -340,9 +343,32 @@
 <script>
 $(document).ready(function() {
 
+  {% comment %} only person view {% endcomment %}
+  function getParam(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+  }
+
+  const viewParam = getParam('v');
+  if(viewParam && viewParam == 'yuya') {    
+    $('.top--btn-switch').hide();
+    $('[data-name="yuya"]').show();
+  }else if(viewParam && viewParam == 'haruna'){  
+    $('.top--btn-switch').hide();
+    $('[data-name="yuya"]').hide();
+    $('[data-name="haruna"]').show();
+  }else{
+    $('[data-name="haruna"]').hide();
+    $('[data-name="yuya"]').show();
+  }
+
   {% comment %} Initialized {% endcomment %}
   $('.top--accordion-content').hide();
-  $('[data-name="haruna"]').hide();
 
   {% comment %} declaration switch btn image src {% endcomment %}
   const imgSrcToYuya = "{{ btnSwitchToYuya }}";
@@ -377,27 +403,6 @@ $(document).ready(function() {
     $(this).toggleClass('active');
     $(this).next('.top--accordion-content').slideToggle();
   });
-  
-
-  {% comment %} only person view {% endcomment %}
-  function getParam(name, url) {
-    if (!url) url = window.location.href;
-    name = name.replace(/[\[\]]/g, "\\$&");
-    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-        results = regex.exec(url);
-    if (!results) return null;
-    if (!results[2]) return '';
-    return decodeURIComponent(results[2].replace(/\+/g, " "));
-  }
-
-  const viewParam = getParam('v');
-  if(viewParam && viewParam == 'yuya') {    
-    $('.top--btn-switch').hide();
-  }else if(viewParam && viewParam == 'haruna'){  
-    $('.top--btn-switch').hide();
-    $('[data-name="yuya"]').hide();
-    $('[data-name="haruna"]').show();
-  }
   
 });  
 </script>
