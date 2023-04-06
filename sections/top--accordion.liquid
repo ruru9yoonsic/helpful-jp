@@ -1,3 +1,4 @@
+{% comment %} Start: Initialized {% endcomment %}
 {% capture accordionButton %}
 <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M0.330078 1.03906L7.26404 7.93967L14.198 1.03906" stroke="{{ settings.colors_background_1 }}" stroke-width="1"/>
@@ -15,10 +16,14 @@
 {%- assign urlNotion = "https://www.notion.so/Your-Name-db7f6f4af9a64534a77495922a4595c9?pvs=4" -%}
 {%- assign urlFaceBook = "https://www.facebook.com/profile.php?id=100091746930736" -%}
 {%- assign urlGithub = "https://github.com/ruru9yoonsic/helpful-jp/blob/main/sections/top--accordion.liquid" -%}
+{%- assign btnSwitchToHaruna = "https://cdn.shopify.com/s/files/1/0645/5151/8428/files/top__switch_to_haruna.png?v=1680769720" -%}
+{%- assign btnSwitchToYuya = "https://cdn.shopify.com/s/files/1/0645/5151/8428/files/top__switch_to_yuya.png?v=1680769720" -%}
+{% comment %} End: Initialized {% endcomment %} 
 
+{% comment %} Layout {% endcomment %}
 <section class="outline--{{ section.id }}">
-  <div class="inner--{{ section.id }}">
-    <img src="https://cdn.shopify.com/s/files/1/0645/5151/8428/files/top__fv_yuya_with_comments.jpg?v=1680506753" alt="myProfile" width="100%" height="100%">
+  <div data-name="yuya" class="inner--{{ section.id }}">
+    <img src="https://cdn.shopify.com/s/files/1/0645/5151/8428/files/top__fv_yuya_with_comments.jpg?v=1680506753" alt="yuya" width="100%" height="100%">
     <ul class="top--accordion">
       <li class="top--accordion-item">
         <h3 class="top--accordion-header">Profile {{ accordionButton}}</h3>
@@ -96,7 +101,25 @@
       </li>
     </ul>    
   </div>
+  <div data-name="haruna" class="inner--{{ section.id }}">
+    <img src="https://cdn.shopify.com/s/files/1/0645/5151/8428/files/image_6.png?v=1666529708" alt="haruna" width="100%" height="100%">
+    <ul class="top--accordion">
+      <li class="top--accordion-item">
+        <h3 class="top--accordion-header">Profile {{ accordionButton}}</h3>
+        <div class="top--accordion-content">
+          <div class="top--accordion-content-grid">
+            <dt>Name</dt>
+            <dd>Haruna</dd>
+          </div>
+        </div>
+      </li>
+    </ul>    
+  </div>
 </section>
+<div class="top--btn-switch">
+  <img src="{{ btnSwitchToHaruna }}" width="100" height="100">
+</div>
+
 
 <style>
 .outline--{{ section.id }} {
@@ -215,6 +238,21 @@
     overflow-x: auto;
   }
 }
+
+.top--btn-switch {
+  position: fixed;
+  bottom: 0;
+  left: 10px;
+  cursor: pointer;
+}
+.top--btn-switch:hover {
+  opacity: 70%;
+}
+@media(width > 1000px) {
+  .top--btn-switch {
+    left: calc(50vw - 480px);
+  }
+}
 </style>
 {% schema %}
 {
@@ -247,6 +285,26 @@ $(document).ready(function() {
 
   {% comment %} default {% endcomment %}
   $('.top--accordion-content').hide();
+  $('[data-name="haruna"]').hide();
+
+  const imgSrcToYuya = "{{ btnSwitchToYuya }}";
+  const imgSrcToHaruna = "{{ btnSwitchToHaruna }}";
+  {% comment %} Switch Btn {% endcomment %}
+  $('.top--btn-switch').on('click', function() {
+    var currentImgSrc = $(this).children('img').attr('src');
+    {% comment %} haruna to yuya {% endcomment %}
+    if(currentImgSrc == imgSrcToYuya) {
+      $(this).children('img').attr('src', imgSrcToHaruna);
+      $('[data-name="haruna"]').hide();
+      $('[data-name="yuya"]').fadeIn();
+
+    {% comment %} yuya to haruna {% endcomment %}
+    }else if (currentImgSrc == imgSrcToHaruna) {
+      $(this).children('img').attr('src', imgSrcToYuya);
+      $('[data-name="yuya"]').hide();
+      $('[data-name="haruna"]').fadeIn();
+    }
+  });
   
   {% comment %} click : header {% endcomment %}
   $('.top--accordion-header').click(function() {
