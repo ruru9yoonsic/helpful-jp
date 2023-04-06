@@ -379,7 +379,17 @@ $(document).ready(function() {
   });
   
 
-  {% comment %} only person {% endcomment %}
+  {% comment %} only person view {% endcomment %}
+  function getParam(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+  }
+
   const viewParam = getParam('v');
   if(viewParam && viewParam == 'yuya') {    
     $('.top--btn-switch').hide();
