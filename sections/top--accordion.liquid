@@ -157,7 +157,7 @@
   background-color: {{ settings.colors_accent_2 }};
   width: 100vw;
 }
-@media(width > 750px){
+@media (width > 750px){
   .top--accordion {    
     max-width: 730px;
   }
@@ -230,7 +230,7 @@
   height: 25px;
   transform: translateY(2px);
 }
-@media(width > 750px){
+@media (width > 750px){
   .top--accordion .top--accordion-item .top--accordion-content .top--accordion-content-grid  {
     grid-template-columns: 150px auto;
   }
@@ -245,10 +245,12 @@
   left: 10px;
   cursor: pointer;
 }
-.top--btn-switch:hover {
-  opacity: 70%;
+@media (hover: hover){
+  .top--btn-switch:hover {
+    opacity: 70%;
+  }
 }
-@media(width > 1000px) {
+@media (width > 1000px) {
   .top--btn-switch {
     left: calc(50vw - 480px);
   }
