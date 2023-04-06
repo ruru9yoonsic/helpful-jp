@@ -378,5 +378,17 @@ $(document).ready(function() {
     $(this).toggleClass('active');
     $(this).next('.top--accordion-content').slideToggle();
   });
+  
+
+  {% comment %} only person {% endcomment %}
+  const viewParam = getParam('v');
+  if(viewParam && viewParam == 'yuya') {    
+    $('.top--btn-switch').hide();
+  }else if(viewParam && viewParam == 'haruna'){  
+    $('.top--btn-switch').hide();
+    $('[data-name="yuya"]').hide();
+    $('[data-name="haruna"]').show();
+  }
+  
 });  
 </script>
