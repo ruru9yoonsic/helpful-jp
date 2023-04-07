@@ -13,8 +13,21 @@
 {% capture logoFaceBook %}
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
 {% endcapture %}
+{%- capture logoLinkedIn -%}
+<?xml version="1.0" encoding="UTF-8"?>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+  <g id="surface1">
+  <path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,46.666667%,70.980392%);fill-opacity:1;" d="M 3.601562 0 L 20.398438 0 C 22.386719 0 24 1.613281 24 3.601562 L 24 20.398438 C 24 22.386719 22.386719 24 20.398438 24 L 3.601562 24 C 1.613281 24 0 22.386719 0 20.398438 L 0 3.601562 C 0 1.613281 1.613281 0 3.601562 0 Z M 3.601562 0 "/>
+  <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 8.390625 6.46875 C 8.390625 7.425781 7.613281 8.203125 6.65625 8.203125 C 5.699219 8.203125 4.921875 7.425781 4.921875 6.46875 C 4.921875 5.511719 5.699219 4.734375 6.65625 4.734375 C 7.613281 4.734375 8.390625 5.511719 8.390625 6.46875 Z M 8.390625 6.46875 "/>
+  <path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:66;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(100%,100%,100%);stroke-opacity:1;stroke-miterlimit:4;" d="M 244 194 L 244 392 M 142 194 L 142 392 " transform="matrix(0.046875,0,0,0.046875,0,0)"/>
+  <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 12.9375 13.21875 C 12.9375 12.28125 13.546875 11.34375 14.625 11.34375 C 15.75 11.34375 16.171875 12.1875 16.171875 13.453125 L 16.171875 18.375 L 19.265625 18.375 L 19.265625 13.078125 C 19.265625 10.21875 17.765625 8.90625 15.703125 8.90625 C 14.109375 8.90625 13.3125 9.796875 12.9375 10.40625 "/>
+  </g>
+  </svg>
+  
+{%- endcapture -%}
 {%- assign urlNotion = "https://www.notion.so/Your-Name-db7f6f4af9a64534a77495922a4595c9?pvs=4" -%}
 {%- assign urlFaceBook = "https://www.facebook.com/profile.php?id=100091746930736" -%}
+{%- assign urlLinkedIn = "https://www.linkedin.com/in/yuya-wada-136458271/" -%}
 {%- assign urlGithub = "https://github.com/ruru9yoonsic/helpful-jp/blob/main/sections/top--accordion.liquid" -%}
 {%- assign btnSwitchToHaruna = "https://cdn.shopify.com/s/files/1/0645/5151/8428/files/top__switch_to_haruna.png?v=1680769720" -%}
 {%- assign btnSwitchToYuya = "https://cdn.shopify.com/s/files/1/0645/5151/8428/files/top__switch_to_yuya.png?v=1680769720" -%}
@@ -26,7 +39,7 @@
     <img src="https://cdn.shopify.com/s/files/1/0645/5151/8428/files/top__fv_yuya_with_comments.jpg?v=1680506753" alt="yuya" width="100%" height="100%">
     <ul class="top--accordion">
       <li class="top--accordion-item">
-        <h3 class="top--accordion-header">Profile {{ accordionButton}}</h3>
+        <h3 class="top--accordion-header">Profile {{ accordionButton }}</h3>
         <div class="top--accordion-content">
           <div class="top--accordion-content-grid">
             <dt>Name</dt>
@@ -45,7 +58,7 @@
         </div>
       </li>
       <li class="top--accordion-item">
-        <h3 class="top--accordion-header">Clients {{ accordionButton}}</h3>
+        <h3 class="top--accordion-header">Clients {{ accordionButton }}</h3>
         <div class="top--accordion-content">
           {% for article in blogs['works'].articles reversed %}
             <a href="{{ article.url }}" target="_blank">
@@ -59,11 +72,11 @@
               </p>
             </a>
           {% endfor %}
-          <span>scroll →</span>
+          <span class="top--accordion-content-scroll">scroll →</span>
         </div>
       </li>
       <li class="top--accordion-item">
-        <h3 class="top--accordion-header">Resume {{ accordionButton}}</h3>
+        <h3 class="top--accordion-header">Resume {{ accordionButton }}</h3>
         <div class="top--accordion-content">
           <div class="top--accordion-content-grid">
             <dt>Link</dt>
@@ -74,7 +87,7 @@
         </div>
       </li>
       <li class="top--accordion-item">
-        <h3 class="top--accordion-header">Contact {{ accordionButton}}</h3>
+        <h3 class="top--accordion-header">Contact {{ accordionButton }}</h3>
         <div class="top--accordion-content">
           <div class="top--accordion-content-grid">
             <dt>Email</dt>
@@ -83,16 +96,20 @@
             <dd class="top--accordion-content-grid-facebook">
               <a href="{{ urlFaceBook }}" target="_blank">{{ logoFaceBook }}</a>
             </dd>
+            <dt>LinkedIn</dt>
+            <dd class="top--accordion-content-grid-linkedin">
+              <a href="{{ urlLinkedIn }}" target="_blank">{{ logoLinkedIn }}</a>
+            </dd>
           </div>
         </div>
       </li>
       <li class="top--accordion-item">
-        <h3 class="top--accordion-header">Message {{ accordionButton}}</h3>
+        <h3 class="top--accordion-header">Message {{ accordionButton }}</h3>
         <div class="top--accordion-content">
           <p>
-            My motto is "Helpful for you"<br>
+            My motto is <span>"Helpful for you"</span><br>
             If you need help with Shopify, I would be happy to assist you.<br>
-            I have over 3 years of experience in Shopify and have obtained Shopify Experts<br>
+            I have <span>over 3 years</span> of experience in Shopify and have obtained <span>Shopify Experts</span><br>
             This website is also a fully customized site using Shopify. <br>
             Thank you for visiting me.<br>
             Much appreciated!
@@ -107,7 +124,7 @@
     <img src="https://cdn.shopify.com/s/files/1/0645/5151/8428/files/image_6.png?v=1666529708" alt="haruna" width="100%" height="100%">
     <ul class="top--accordion">
       <li class="top--accordion-item">
-        <h3 class="top--accordion-header">Profile {{ accordionButton}}</h3>
+        <h3 class="top--accordion-header">Profile {{ accordionButton }}</h3>
         <div class="top--accordion-content">
           <div class="top--accordion-content-grid">
             <dt>Name</dt>
@@ -124,7 +141,7 @@
         </div>
       </li>
       <li class="top--accordion-item">
-        <h3 class="top--accordion-header">Site {{ accordionButton}}</h3>
+        <h3 class="top--accordion-header">Site {{ accordionButton }}</h3>
         <div class="top--accordion-content">
           <p>
             <a href="https://haruportfolio.studio.site" target="_blank">https://haruportfolio.studio.site</a>
@@ -132,7 +149,7 @@
         </div>
       </li>
       <li class="top--accordion-item">
-        <h3 class="top--accordion-header">Resume {{ accordionButton}}</h3>
+        <h3 class="top--accordion-header">Resume {{ accordionButton }}</h3>
         <div class="top--accordion-content">
           <div class="top--accordion-content-grid">
             <dt>Link</dt>
@@ -141,7 +158,7 @@
         </div>
       </li>
       <li class="top--accordion-item">
-        <h3 class="top--accordion-header">Contact {{ accordionButton}}</h3>
+        <h3 class="top--accordion-header">Contact {{ accordionButton }}</h3>
         <div class="top--accordion-content">
           <div class="top--accordion-content-grid">
             <dt>E-mail</dt>
@@ -239,7 +256,7 @@
   color: var(--color-base-text);
   text-decoration: none;
 }
-.top--accordion .top--accordion-item .top--accordion-content span {  
+.top--accordion .top--accordion-item .top--accordion-content .top--accordion-content-scroll {  
   color: var(--color-base-text);
   position: absolute;
   bottom: 0;
@@ -272,6 +289,14 @@
   width: 25px;
   height: 25px;
   transform: translateY(2px);
+}
+.top--accordion .top--accordion-item .top--accordion-content .top--accordion-content-grid .top--accordion-content-grid-linkedin svg {
+  width: 25px;
+  height: 25px;
+  transform: translateY(2px);
+}
+.top--accordion .top--accordion-item .top--accordion-content p span {
+  background: linear-gradient(transparent 60%, rgba(253, 95, 0, 0.6) 60%);
 }
 @media (width > 750px){
   .top--accordion .top--accordion-item .top--accordion-content .top--accordion-content-grid  {
