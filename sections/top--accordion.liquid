@@ -1,44 +1,21 @@
-{% comment %} Initialized {% endcomment %}
-{% capture accordionButton %}
-<svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M0.330078 1.03906L7.26404 7.93967L14.198 1.03906" stroke="{{ settings.colors_background_1 }}" stroke-width="1"/>
-</svg>
-{% endcapture %}
-{% capture logoGithub %}
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-{% endcapture %}
-{% capture logoNotion %}
-<svg height="2500" width="2500" xmlns="http://www.w3.org/2000/svg" viewBox="12 0.18999999999999906 487.619 510.941"><path d="M96.085 91.118c15.81 12.845 21.741 11.865 51.43 9.884l279.888-16.806c5.936 0 1-5.922-.98-6.906L379.94 43.686c-8.907-6.915-20.773-14.834-43.516-12.853L65.408 50.6c-9.884.98-11.858 5.922-7.922 9.883zm16.804 65.228v294.491c0 15.827 7.909 21.748 25.71 20.769l307.597-17.799c17.81-.979 19.794-11.865 19.794-24.722V136.57c0-12.836-4.938-19.758-15.84-18.77l-321.442 18.77c-11.863.997-15.82 6.931-15.82 19.776zm303.659 15.797c1.972 8.903 0 17.798-8.92 18.799l-14.82 2.953v217.412c-12.868 6.916-24.734 10.87-34.622 10.87-15.831 0-19.796-4.945-31.654-19.76l-96.944-152.19v147.248l30.677 6.922s0 17.78-24.75 17.78l-68.23 3.958c-1.982-3.958 0-13.832 6.921-15.81l17.805-4.935V210.7l-24.721-1.981c-1.983-8.903 2.955-21.74 16.812-22.736l73.195-4.934 100.889 154.171V198.836l-25.723-2.952c-1.974-10.884 5.927-18.787 15.819-19.767zM42.653 23.919l281.9-20.76c34.618-2.969 43.525-.98 65.283 14.825l89.986 63.247c14.848 10.876 19.797 13.837 19.797 25.693v346.883c0 21.74-7.92 34.597-35.608 36.564L136.64 510.14c-20.785.991-30.677-1.971-41.562-15.815l-66.267-85.978C16.938 392.52 12 380.68 12 366.828V58.495c0-17.778 7.922-32.608 30.653-34.576z" fill-rule="evenodd"/></svg>
-{% endcapture %}
-{% capture logoFaceBook %}
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
-{% endcapture %}
-{%- capture logoLinkedIn -%}
-<?xml version="1.0" encoding="UTF-8"?>
-  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-  <g id="surface1">
-  <path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,46.666667%,70.980392%);fill-opacity:1;" d="M 3.601562 0 L 20.398438 0 C 22.386719 0 24 1.613281 24 3.601562 L 24 20.398438 C 24 22.386719 22.386719 24 20.398438 24 L 3.601562 24 C 1.613281 24 0 22.386719 0 20.398438 L 0 3.601562 C 0 1.613281 1.613281 0 3.601562 0 Z M 3.601562 0 "/>
-  <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 8.390625 6.46875 C 8.390625 7.425781 7.613281 8.203125 6.65625 8.203125 C 5.699219 8.203125 4.921875 7.425781 4.921875 6.46875 C 4.921875 5.511719 5.699219 4.734375 6.65625 4.734375 C 7.613281 4.734375 8.390625 5.511719 8.390625 6.46875 Z M 8.390625 6.46875 "/>
-  <path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:66;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(100%,100%,100%);stroke-opacity:1;stroke-miterlimit:4;" d="M 244 194 L 244 392 M 142 194 L 142 392 " transform="matrix(0.046875,0,0,0.046875,0,0)"/>
-  <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 12.9375 13.21875 C 12.9375 12.28125 13.546875 11.34375 14.625 11.34375 C 15.75 11.34375 16.171875 12.1875 16.171875 13.453125 L 16.171875 18.375 L 19.265625 18.375 L 19.265625 13.078125 C 19.265625 10.21875 17.765625 8.90625 15.703125 8.90625 C 14.109375 8.90625 13.3125 9.796875 12.9375 10.40625 "/>
-  </g>
-  </svg>  
-{%- endcapture -%}
-{%- assign urlNotion = "https://www.notion.so/Your-Name-db7f6f4af9a64534a77495922a4595c9?pvs=4" -%}
-{%- assign urlFaceBook = "https://www.facebook.com/profile.php?id=100091746930736" -%}
-{%- assign urlLinkedIn = "https://www.linkedin.com/in/yuya-wada-136458271/" -%}
-{%- assign urlGithub = "https://github.com/ruru9yoonsic/helpful-jp/blob/main/sections/top--accordion.liquid" -%}
-{%- assign btnSwitchToHaruna = "https://cdn.shopify.com/s/files/1/0645/5151/8428/files/h.png?v=1681886124" -%}
-{%- assign btnSwitchToYuya = "https://cdn.shopify.com/s/files/1/0645/5151/8428/files/y.png?v=1681886124" -%}
-{% comment %} End: Initialized {% endcomment %} 
+{% liquid
+  comment URL initialized
+  endcomment
+  assign urlNotion = "https://www.notion.so/Your-Name-db7f6f4af9a64534a77495922a4595c9?pvs=4"
+  assign urlFaceBook = "https://www.facebook.com/profile.php?id=100091746930736"
+  assign urlLinkedIn = "https://www.linkedin.com/in/yuya-wada-136458271/"
+  assign urlGithub = "https://github.com/ruru9yoonsic/helpful-jp/blob/main/sections/top--accordion.liquid"
+  assign btnSwitchToHaruna = "https://cdn.shopify.com/s/files/1/0645/5151/8428/files/top__switch_to_haruna.png?v=1680769720"
+  assign btnSwitchToYuya = "https://cdn.shopify.com/s/files/1/0645/5151/8428/files/top__switch_to_yuya.png?v=1680769720"
+%}
 
 {% comment %} Layout {% endcomment %}
-<section class="outline--{{ section.id }}">
+<section class="wrapper--{{ section.id }}">
   <div data-name="yuya" class="inner--{{ section.id }}">
     <img src="https://cdn.shopify.com/s/files/1/0645/5151/8428/files/top__fv_yuya_with_comments.jpg?v=1680506753" alt="yuya" width="100%" height="100%">
     <ul class="top--accordion">
       <li class="top--accordion-item">
-        <h3 class="top--accordion-header">Profile {{ accordionButton }}</h3>
+        <h3 class="top--accordion-header">Profile {% render 'svg-list', name: 'accordionArrow' %}</h3>
         <div class="top--accordion-content">
           <div class="top--accordion-content-grid">
             <dt>Name</dt>
@@ -52,12 +29,12 @@
             <dt>Skill</dt>
             <dd>HTML / CSS / Liquid / JavaScript (jQuery) / React (Next.js) / TypeScript / Python</dd>
             <dt>Code</dt>
-            <dd><a href="{{ urlGithub }}"  target="_blank">{{ logoGithub }}</a></dd>
+            <dd><a href="{{ urlGithub }}" target="_blank">{% render 'svg-list', name: 'logoGitHub' %}</a></dd>
           </div>
         </div>
       </li>
       <li class="top--accordion-item">
-        <h3 class="top--accordion-header">Clients {{ accordionButton }}</h3>
+        <h3 class="top--accordion-header">Clients {% render 'svg-list', name: 'accordionArrow' %}</h3>
         <div class="top--accordion-content">
           {% for article in blogs['works'].articles reversed %}
             <a href="{{ article.url }}" target="_blank">
@@ -75,35 +52,35 @@
         </div>
       </li>
       <li class="top--accordion-item">
-        <h3 class="top--accordion-header">Resume {{ accordionButton }}</h3>
+        <h3 class="top--accordion-header">Resume {% render 'svg-list', name: 'accordionArrow' %}</h3>
         <div class="top--accordion-content">
           <div class="top--accordion-content-grid">
             <dt>Link</dt>
             <dd class="top--accordion-content-grid-notion">
-              <a href="{{ urlNotion }}" target="_blank">{{ logoNotion }}</a>
+              <a href="{{ urlNotion }}" target="_blank">{% render 'svg-list', name: 'logoNotion' %}</a>
             </dd>
           </div>
         </div>
       </li>
       <li class="top--accordion-item">
-        <h3 class="top--accordion-header">Contact {{ accordionButton }}</h3>
+        <h3 class="top--accordion-header">Contact {% render 'svg-list', name: 'accordionArrow' %}</h3>
         <div class="top--accordion-content">
           <div class="top--accordion-content-grid">
             <dt>Email</dt>
             <dd>yuya.wada.san@gmail.com</dd>
             <dt>Facebook</dt>
             <dd class="top--accordion-content-grid-facebook">
-              <a href="{{ urlFaceBook }}" target="_blank">{{ logoFaceBook }}</a>
+              <a href="{{ urlFaceBook }}" target="_blank">{% render 'svg-list', name: 'logoFaceBook' %}</a>
             </dd>
             <dt>LinkedIn</dt>
             <dd class="top--accordion-content-grid-linkedin">
-              <a href="{{ urlLinkedIn }}" target="_blank">{{ logoLinkedIn }}</a>
+              <a href="{{ urlLinkedIn }}" target="_blank">{% render 'svg-list', name: 'logoLinkedIn' %}</a>
             </dd>
           </div>
         </div>
       </li>
       <li class="top--accordion-item">
-        <h3 class="top--accordion-header">Message {{ accordionButton }}</h3>
+        <h3 class="top--accordion-header">Message {% render 'svg-list', name: 'accordionArrow' %}</h3>
         <div class="top--accordion-content">
           <p>
             My motto is <span>"Helpful for you"</span><br>
@@ -123,7 +100,7 @@
     <img src="https://cdn.shopify.com/s/files/1/0645/5151/8428/files/image_6.png?v=1666529708" alt="haruna" width="100%" height="100%">
     <ul class="top--accordion">
       <li class="top--accordion-item">
-        <h3 class="top--accordion-header">Profile {{ accordionButton }}</h3>
+        <h3 class="top--accordion-header">Profile {% render 'svg-list', name: 'accordionArrow' %}</h3>
         <div class="top--accordion-content">
           <div class="top--accordion-content-grid">
             <dt>Name</dt>
@@ -140,7 +117,7 @@
         </div>
       </li>
       <li class="top--accordion-item">
-        <h3 class="top--accordion-header">Site {{ accordionButton }}</h3>
+        <h3 class="top--accordion-header">Site {% render 'svg-list', name: 'accordionArrow' %}</h3>
         <div class="top--accordion-content">
           <p>
             <a href="https://haruportfolio.studio.site" target="_blank">https://haruportfolio.studio.site</a>
@@ -148,7 +125,7 @@
         </div>
       </li>
       <li class="top--accordion-item">
-        <h3 class="top--accordion-header">Resume {{ accordionButton }}</h3>
+        <h3 class="top--accordion-header">Resume {% render 'svg-list', name: 'accordionArrow' %}</h3>
         <div class="top--accordion-content">
           <div class="top--accordion-content-grid">
             <dt>Link</dt>
@@ -157,14 +134,14 @@
         </div>
       </li>
       <li class="top--accordion-item">
-        <h3 class="top--accordion-header">Contact {{ accordionButton }}</h3>
+        <h3 class="top--accordion-header">Contact {% render 'svg-list', name: 'accordionArrow' %}</h3>
         <div class="top--accordion-content">
           <div class="top--accordion-content-grid">
             <dt>E-mail</dt>
             <dd>h.fukuyama10@gmail.com</dd>
             <dt>Facebook</dt>
             <dd class="top--accordion-content-grid-facebook">
-              <a href="https://www.facebook.com/profile.php?id=100091660504547" target="_blank">{{ logoFaceBook }}</a>
+              <a href="https://www.facebook.com/profile.php?id=100091660504547" target="_blank">{% render 'svg-list', name: 'logoFaceBook' %}</a>
             </dd>
           </div>
         </div>
@@ -179,7 +156,7 @@
 
 
 <style>
-.outline--{{ section.id }} {
+.wrapper--{{ section.id }} {
   background-color: {{ section.settings.bgColor }};
   padding: {{ section.settings.padding }};
   margin: {{ section.settings.margin }};
@@ -241,6 +218,7 @@
 .top--accordion .top--accordion-item .top--accordion-content {
   padding: 10px 20px 20px;
   background-color: {{ settings.colors_background_1 }};
+  display: none;
 }
 .top--accordion .top--accordion-item:has(a) {
   position: relative;
@@ -348,7 +326,7 @@
     {
       "type": "color",
       "id": "bgColor",
-      "label": "全体の背景色"
+      "label": "back ground color"
     },{
       "type": "text",
       "id": "margin",
@@ -381,17 +359,22 @@ $(document).ready(function() {
     return decodeURIComponent(results[2].replace(/\+/g, " "));
   }
 
+  const $topBtnSwitch = $('.top--btn-switch'),
+    $yuya = $('[data-name="yuya"]'),
+    $haruna = $('[data-name="haruna"]');
+
+  {% comment %} show first contents {% endcomment %}
   const viewParam = getParam('v');
   if(viewParam && viewParam == 'yuya') {    
-    $('.top--btn-switch').hide();
-    $('[data-name="yuya"]').show();
+    $topBtnSwitch.hide();
+    $yuya.show();
   }else if(viewParam && viewParam == 'haruna'){  
-    $('.top--btn-switch').hide();
-    $('[data-name="yuya"]').hide();
-    $('[data-name="haruna"]').show();
+    $topBtnSwitch.hide();
+    $yuya.hide();
+    $haruna.show();
   }else{
-    $('[data-name="haruna"]').hide();
-    $('[data-name="yuya"]').show();
+    $haruna.hide();
+    $yuya.show();
   }
 
   {% comment %} Initialized {% endcomment %}
@@ -402,24 +385,24 @@ $(document).ready(function() {
   const imgSrcToHaruna = "{{ btnSwitchToHaruna }}";
 
   {% comment %} Switch Profile {% endcomment %}
-  $('.top--btn-switch').on('click', function() {
+  $topBtnSwitch.on('click', function() {
     var currentImgSrc = $(this).children('img').attr('src');
 
     {% comment %} haruna to yuya {% endcomment %}
     if(currentImgSrc == imgSrcToYuya) {
       $(this).children('img').attr('src', imgSrcToHaruna);
-      $('[data-name="haruna"]').hide();
-      $('[data-name="yuya"]').fadeIn();
+      $haruna.hide();
+      $yuya.fadeIn();
 
     {% comment %} yuya to haruna {% endcomment %}
     }else if (currentImgSrc == imgSrcToHaruna) {
       $(this).children('img').attr('src', imgSrcToYuya);
-      $('[data-name="yuya"]').hide();
-      $('[data-name="haruna"]').fadeIn();
+      $yuya.hide();
+      $haruna.fadeIn();
     }
   });
   
-  {% comment %} Accordion {% endcomment %}
+  {% comment %} Accordion open and close {% endcomment %}
   $('.top--accordion-header').click(function() {
     var $accordionButton = $(this).find('svg');
     var rotation = $accordionButton.data('rotation') || 0;
