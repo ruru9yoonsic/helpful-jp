@@ -3,7 +3,7 @@
     "819b104d-4bd4-4a69-8f3c-6c8067708d72": {
       "type": "top--news",
       "settings": {
-        "title": "NEWS",
+        "title": "NEWSasdfdsa",
         "isDate": true,
         "blog": "works",
         "bg_color": "",
@@ -13,15 +13,28 @@
     },
     "ff369500-b8fd-4c6f-bc5d-771fc123dafd": {
       "type": "top--accordion",
+      "disabled": true,
       "settings": {
         "bgColor": "",
         "margin": "",
         "padding": ""
       }
+    },
+    "c6d1a5d2-bcb7-4280-b9fd-4a8d7dd268ed": {
+      "type": "top--news",
+      "settings": {
+        "title": "NEWS",
+        "isDate": true,
+        "blog": "",
+        "bg_color": "",
+        "padding": "",
+        "margin": ""
+      }
     }
   },
   "order": [
     "819b104d-4bd4-4a69-8f3c-6c8067708d72",
-    "ff369500-b8fd-4c6f-bc5d-771fc123dafd"
+    "ff369500-b8fd-4c6f-bc5d-771fc123dafd",
+    "c6d1a5d2-bcb7-4280-b9fd-4a8d7dd268ed"
   ]
 }
