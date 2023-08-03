@@ -20,21 +20,53 @@
         "padding": ""
       }
     },
-    "c6d1a5d2-bcb7-4280-b9fd-4a8d7dd268ed": {
-      "type": "top--news",
+    "4af32753-43ca-4c6d-8edd-dde8e89d1b32": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16078955938012__4af32753-43ca-4c6d-8edd-dde8e89d1b32-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Talk about your brand<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--16078955938012__4af32753-43ca-4c6d-8edd-dde8e89d1b32-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "template--16078955938012__4af32753-43ca-4c6d-8edd-dde8e89d1b32-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16078955938012__4af32753-43ca-4c6d-8edd-dde8e89d1b32-heading-1",
+        "template--16078955938012__4af32753-43ca-4c6d-8edd-dde8e89d1b32-text-1",
+        "template--16078955938012__4af32753-43ca-4c6d-8edd-dde8e89d1b32-button-1"
+      ],
       "settings": {
-        "title": "NEWS",
-        "isDate": true,
-        "blog": "",
-        "bg_color": "",
-        "padding": "",
-        "margin": ""
+        "test": "",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
     "819b104d-4bd4-4a69-8f3c-6c8067708d72",
     "ff369500-b8fd-4c6f-bc5d-771fc123dafd",
-    "c6d1a5d2-bcb7-4280-b9fd-4a8d7dd268ed"
+    "4af32753-43ca-4c6d-8edd-dde8e89d1b32"
   ]
 }
