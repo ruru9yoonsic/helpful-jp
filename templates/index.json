@@ -1,5 +1,16 @@
 {
   "sections": {
+    "819b104d-4bd4-4a69-8f3c-6c8067708d72": {
+      "type": "top--news",
+      "settings": {
+        "title": "NEWS",
+        "isDate": true,
+        "blog": "works",
+        "bg_color": "",
+        "padding": "",
+        "margin": ""
+      }
+    },
     "ff369500-b8fd-4c6f-bc5d-771fc123dafd": {
       "type": "top--accordion",
       "settings": {
@@ -10,6 +21,7 @@
     }
   },
   "order": [
+    "819b104d-4bd4-4a69-8f3c-6c8067708d72",
     "ff369500-b8fd-4c6f-bc5d-771fc123dafd"
   ]
 }
